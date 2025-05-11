@@ -1,12 +1,14 @@
 import customtkinter, time, sys, os
 from tkinter import *
 from pytubefix import YouTube
+from PIL import Image
 
 
 root = customtkinter.CTk()
 root.title = ('Youtube video downloader')
 root.geometry("500x200")
 customtkinter.set_appearance_mode('dark')
+bg_image = customtkinter.CTkImage(Image.open("assets/ytbg.png"), size=(500, 200))
 root.resizable(width = False, height = False)
 
 
@@ -32,7 +34,8 @@ def dl_vid():
     change_label.configure(text='Download successful')
     time.sleep(1)
     
-
+bg_label = customtkinter.CTkLabel(root, image=bg_image, text="")
+bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 entry = customtkinter.CTkEntry(root, width=300, placeholder_text='Paste URL here...')
 entry.place(relx=0.2, rely=0.3)
 button = customtkinter.CTkButton(root, text="Click to download", command=dl_vid)
