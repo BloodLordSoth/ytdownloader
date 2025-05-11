@@ -8,7 +8,7 @@
 <br>
 
 - For those wanting a Windows executable  
-        - [ytdownloader @MEGA](https://mega.nz/file/4blWlbRL#KUw2mrmhSIfAkt6x_5r0j1PAWzDc8dtIm16MQLI1kOI)
+        - [ytdownloader @MEGA](https://mega.nz/file/tecWxahB#84N6o9J0Ikgq2Z1ADE3yM7EFp_cB9iS4bO3d69k5ExI)
 
 <br>
 
