@@ -5,10 +5,10 @@ from PIL import Image
 
 
 root = customtkinter.CTk()
-root.title = ('Youtube video downloader')
+root.title('Youtube video downloader')
 root.geometry("500x200")
 customtkinter.set_appearance_mode('dark')
-bg_image = customtkinter.CTkImage(Image.open("assets/ytbg.png"), size=(500, 200))
+bg_image = customtkinter.CTkImage(Image.open("assets/ytdbg1.png"), size=(500, 200))
 root.resizable(width = False, height = False)
 
 
@@ -37,13 +37,15 @@ def dl_vid():
 bg_label = customtkinter.CTkLabel(root, image=bg_image, text="")
 bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 entry = customtkinter.CTkEntry(root, width=300, placeholder_text='Paste URL here...')
-entry.place(relx=0.2, rely=0.3)
+entry.place(relx=0.2, rely=0.38)
 button = customtkinter.CTkButton(root, text="Click to download", command=dl_vid)
-button.place(relx=0.35, rely=0.5)
+button.place(relx=0.35, rely=0.58)
 change_label = customtkinter.CTkLabel(root, width=200, height=30, text="Waiting for Link..." )
-change_label.place(relx=0.3, rely=0.69)
+change_label.place(relx=0.28, rely=0.77)
 label = customtkinter.CTkLabel(root, text="Charles x Philippa forever")
 label.place(relx=0.70, rely=0.90)
+prop_label = customtkinter.CTkLabel(root, text="Art by SpasticFantastic")
+prop_label.place(relx=0, rely=0.90)
 
 root.mainloop()
 
